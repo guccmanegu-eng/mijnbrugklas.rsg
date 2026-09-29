@@ -7,7 +7,7 @@ import { EXERCISES, HOMEWORK, MINIGAMES, SUBJECTS } from "@/lib/game/data";
 import { useGame } from "@/lib/game/state";
 
 export const Route = createFileRoute("/spel/huiswerk/$id")({
-  head: () => ({ meta: [{ title: "Huiswerk maken — Martinuscollege Brugklas-game" }] }),
+  head: () => ({ meta: [{ title: "Huiswerk maken — RSG Enkhuizen Brugklas-game" }] }),
   component: OpdrachtPagina,
 });
 

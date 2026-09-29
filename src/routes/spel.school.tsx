@@ -22,7 +22,7 @@ function SchoolPagina() {
 
   return (
     <div className="mx-auto max-w-2xl">
-      <SectionTitle icon="🗺️" title="De school" sub="Op het Martinuscollege lees je de code zo: A2.21 = vleugel A, tweede verdieping, lokaal 21." />
+      <SectionTitle icon="🗺️" title="De school" sub="Op de RSG Enkhuizen lees je de code zo: A2.21 = vleugel A, tweede verdieping, lokaal 21." />
 
       {state.lastResult ? (
         <Card
@@ -81,7 +81,7 @@ function SchoolPagina() {
       )}
 
       <Card>
-        <p className="text-sm font-extrabold">🧭 Plattegrond Martinuscollege · Grootebroek</p>
+        <p className="text-sm font-extrabold">🧭 Plattegrond RSG Enkhuizen</p>
         <div className="mt-4 space-y-4">
           {(Object.keys(ALL_ROOMS) as (keyof typeof ALL_ROOMS)[]).map((gebouw) => (
             <div key={gebouw}>

@@ -20,7 +20,7 @@ function NotFoundComponent() {
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">Oeps, dit lokaal bestaat niet</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          Zelfs op het Martinuscollege is er geen lokaal Z9.99. Loop terug naar de aula.
+          Zelfs op de RSG Enkhuizen is er geen lokaal Z9.99. Loop terug naar de aula.
         </p>
         <div className="mt-6">
           <Link
@@ -78,18 +78,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Brugklas Martinuscollege — oefen je eerste schoolweek" },
+      { title: "Brugklas RSG Enkhuizen — oefen je eerste schoolweek" },
       {
         name: "description",
         content:
-          "Oefen een hele schoolweek op het Martinuscollege in Grootebroek: rooster, lokalen als A2.21 en C0.04, huiswerk, planning en toetsen.",
+          "Oefen een hele schoolweek op de RSG Enkhuizen: rooster, lokalen als A2.21 en C0.04, huiswerk, planning en toetsen.",
       },
-      { name: "author", content: "Martinuscollege Grootebroek" },
-      { property: "og:title", content: "Brugklas Martinuscollege — oefen je eerste schoolweek" },
+      { name: "author", content: "RSG Enkhuizen" },
+      { property: "og:title", content: "Brugklas RSG Enkhuizen — oefen je eerste schoolweek" },
       {
         property: "og:description",
         content:
-          "Een veilige oefenweek op het Martinuscollege in Grootebroek: rooster, huiswerk, planning en toetsen.",
+          "Een veilige oefenweek op de RSG Enkhuizen: rooster, huiswerk, planning en toetsen.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

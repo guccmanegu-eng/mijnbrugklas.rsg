@@ -1,22 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BigButton, Card, Pill } from "@/components/game/bits";
 import { SKILL_META, type SkillId } from "@/lib/game/data";
-import logo from "@/assets/martinuscollege-logo.png.asset.json";
+import logo from "@/assets/rsg-crest.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Brugklas Martinuscollege — oefen je eerste schoolweek in Grootebroek" },
+      { title: "Brugklas RSG Enkhuizen — oefen je eerste schoolweek in Enkhuizen" },
       {
         name: "description",
         content:
-          "Speel een hele schoolweek op het Martinuscollege in Grootebroek: rooster, lokalen als A2.21 en C0.04, huiswerk, planning, toetsen en echte keuzes.",
+          "Speel een hele schoolweek op de RSG Enkhuizen: rooster, lokalen als A2.21 en C0.04, huiswerk, planning, toetsen en echte keuzes.",
       },
-      { property: "og:title", content: "Brugklas Martinuscollege — oefen het voordat het echt begint" },
+      { property: "og:title", content: "Brugklas RSG Enkhuizen — oefen het voordat het echt begint" },
       {
         property: "og:description",
         content:
-          "Een veilige oefenweek op het Martinuscollege Grootebroek. Geen echte onvoldoendes, wel echte keuzes en echte gevolgen.",
+          "Een veilige oefenweek op de RSG Enkhuizen. Geen echte onvoldoendes, wel echte keuzes en echte gevolgen.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,7 +29,7 @@ const STAPPEN = [
   {
     icon: "📋",
     titel: "Je krijgt een rooster",
-    tekst: "Vijf dagen, echte Martinus-lokalen: A0.02, B1.12, C2.06. Niemand loopt met je mee.",
+    tekst: "Vijf dagen, echte RSG-lokalen: A0.02, B1.12, C2.06. Niemand loopt met je mee.",
   },
   {
     icon: "🎒",
@@ -56,14 +56,14 @@ function Home() {
       <header className="mx-auto flex w-full max-w-5xl items-center justify-between gap-4 px-5 py-4 sm:py-5">
         <span className="flex min-w-0 items-center gap-3">
           <img
-            src={logo.url}
-            alt="Martinuscollege Grootebroek"
+            src={logo}
+            alt="RSG Enkhuizen"
             className="h-16 w-auto shrink-0 wiggle-hover sm:h-20"
           />
           <span className="hidden leading-tight sm:block">
             <span className="block text-lg font-extrabold">Brugklas-game</span>
             <span className="block text-[11px] font-bold uppercase tracking-wider text-rose">
-              Grootebroek
+              Enkhuizen
             </span>
           </span>
         </span>
@@ -76,12 +76,12 @@ function Home() {
         <section className="mx-auto w-full max-w-5xl px-5 pb-16 pt-8 sm:pt-14">
           <div className="flex flex-wrap gap-2">
             <Pill tone="brand">🎉 Voor groep 8</Pill>
-            <Pill tone="good">📍 Martinuscollege Grootebroek</Pill>
+            <Pill tone="good">📍 RSG Enkhuizen</Pill>
             <Pill tone="warn">🕹️ Spelenderwijs oefenen</Pill>
           </div>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
-            Overleef jij een week op het{" "}
-            <span className="text-brand">Martinuscollege</span>? 🎒
+            Overleef jij een week op de{" "}
+            <span className="text-brand">RSG Enkhuizen</span>? 🎒
           </h1>
           <p className="mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
             Vijf dagen, zeven lesuren, lokalen van A0.02 tot C2.06 en een rugzak die je zélf
@@ -90,7 +90,7 @@ function Home() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:max-w-md sm:flex-row">
             <Link to="/profiel" className="flex-1">
-              <BigButton>🚀 Start je Martinus-week →</BigButton>
+              <BigButton>🚀 Start je RSG-week →</BigButton>
             </Link>
             <Link to="/spel" className="flex-1">
               <BigButton variant="ghost">Verder waar je was</BigButton>
@@ -102,7 +102,7 @@ function Home() {
         </section>
 
         <section className="mx-auto w-full max-w-5xl px-5 pb-16">
-          <h2 className="text-2xl font-bold sm:text-3xl">Zo ziet jouw week op het Martinus eruit 👀</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">Zo ziet jouw week op de RSG eruit 👀</h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {STAPPEN.map((s) => (
               <Card key={s.titel} className="wiggle-hover h-full animate-pop-in">
@@ -115,7 +115,7 @@ function Home() {
         </section>
 
         <section className="mx-auto w-full max-w-5xl px-5 pb-16">
-          <h2 className="text-2xl font-bold sm:text-3xl">Aan het eind verdien je je Martinus-rapport ⭐</h2>
+          <h2 className="text-2xl font-bold sm:text-3xl">Aan het eind verdien je je RSG-rapport ⭐</h2>
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             Je ziet niet alleen of je de week hebt gehaald, maar ook waar je al goed in bent en wat
             je nog kunt oefenen.
@@ -145,7 +145,7 @@ function Home() {
       </main>
 
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        🎒 Brugklas · Martinuscollege Grootebroek — oefen het voordat het echt begint.
+        🎒 Brugklas · RSG Enkhuizen — oefen het voordat het echt begint.
       </footer>
     </div>
   );

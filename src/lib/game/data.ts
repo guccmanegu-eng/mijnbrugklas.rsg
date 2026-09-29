@@ -217,7 +217,7 @@ export const MINIGAMES: Record<string, MiniGameDef> = {
       "Monniken verspreiden het christendom",
       "Leenstelsel en ridders",
       "Handel en steden groeien",
-      "Grootebroek krijgt stadsrechten (1364)",
+      "Enkhuizen krijgt stadsrechten (1364)",
     ],
   },
 };
@@ -260,14 +260,14 @@ export const EXERCISES: Record<string, { intro?: string; vragen: Question[] }> =
   },
   "nl-h3": {
     intro:
-      "Nederlands hoofdstuk 3 — Lezen & taalverzorging.\n\nTekst: 'De eerste week'\nNoor (12) begon deze maand in de brugklas van het Martinuscollege. De eerste dagen verdwaalde ze twee keer: ze stond in A1.14 terwijl haar les in B1.14 was. 'Ik dacht dat de letter niet uitmaakte,' lacht ze. Inmiddels weet ze dat de letter de vleugel is en het eerste cijfer de verdieping. Toch vindt Noor plannen nog het lastigst. Daarom schrijft ze sinds vorige week elke avond in haar agenda wat ze de volgende dag moet meenemen.",
+      "Nederlands hoofdstuk 3 — Lezen & taalverzorging.\n\nTekst: 'De eerste week'\nNoor (12) begon deze maand in de brugklas van de RSG Enkhuizen. De eerste dagen verdwaalde ze twee keer: ze stond in A1.14 terwijl haar les in B1.14 was. 'Ik dacht dat de letter niet uitmaakte,' lacht ze. Inmiddels weet ze dat de letter de vleugel is en het eerste cijfer de verdieping. Toch vindt Noor plannen nog het lastigst. Daarom schrijft ze sinds vorige week elke avond in haar agenda wat ze de volgende dag moet meenemen.",
     vragen: [
       { vraag: "In welk lokaal had Noor les toen ze verdwaalde?", open: true, antwoorden: ["b1.14", "b114"] },
       { vraag: "Wat betekent het eerste cijfer in een lokaalnummer volgens de tekst?", open: true, antwoorden: ["verdieping", "de verdieping"] },
       {
         vraag: "Wat is de hoofdgedachte van de tekst?",
         opties: [
-          "Het Martinuscollege is een groot gebouw.",
+          "De RSG Enkhuizen is een groot gebouw.",
           "Noor went aan de middelbare school en leert plannen.",
           "Noor vindt de brugklas niet leuk.",
         ],
@@ -282,12 +282,12 @@ export const EXERCISES: Record<string, { intro?: string; vragen: Question[] }> =
   },
   "gs-presentatie": {
     intro:
-      "Geschiedenis — Tijdvak 3 & 4: Monniken, ridders en steden (500–1500).\n\nIn de vroege middeleeuwen leefden de meeste mensen als boer op het platteland. Het leenstelsel bepaalde wie de macht had: de koning gaf land in leen aan edelen, en zij gaven een deel door aan ridders. In ruil moesten ze trouw zijn en meevechten. Horigen werkten op het land van de heer en mochten niet zomaar vertrekken. Vanaf ongeveer 1000 groeide de handel. Steden kregen stadsrechten, zoals het recht om een muur te bouwen en markt te houden. Ook in West-Friesland ontstonden steden: Grootebroek kreeg in 1364 stadsrechten.",
+      "Geschiedenis — Tijdvak 3 & 4: Monniken, ridders en steden (500–1500).\n\nIn de vroege middeleeuwen leefden de meeste mensen als boer op het platteland. Het leenstelsel bepaalde wie de macht had: de koning gaf land in leen aan edelen, en zij gaven een deel door aan ridders. In ruil moesten ze trouw zijn en meevechten. Horigen werkten op het land van de heer en mochten niet zomaar vertrekken. Vanaf ongeveer 1000 groeide de handel. Steden kregen stadsrechten, zoals het recht om een muur te bouwen en markt te houden. Ook in West-Friesland ontstonden steden: Enkhuizen kreeg in 1364 stadsrechten.",
     vragen: [
       { vraag: "Hoe heet het systeem waarbij land werd uitgeleend in ruil voor trouw?", open: true, antwoorden: ["leenstelsel", "het leenstelsel"] },
       { vraag: "Hoe noem je boeren die op het land van de heer werkten en niet zomaar weg mochten?", open: true, antwoorden: ["horigen", "horige"] },
       { vraag: "Noem één stadsrecht uit de tekst.", open: true, antwoorden: ["muur", "muur bouwen", "markt", "markt houden", "marktrecht", "een muur bouwen", "markt houden"] },
-      { vraag: "In welk jaar kreeg Grootebroek stadsrechten?", open: true, antwoorden: ["1364"] },
+      { vraag: "In welk jaar kreeg Enkhuizen stadsrechten?", open: true, antwoorden: ["1364"] },
       {
         vraag: "Waarom groeiden steden vanaf ongeveer het jaar 1000?",
         opties: ["Door de groei van de handel", "Omdat ridders er gingen wonen", "Omdat boeren geen land meer hadden"],
@@ -527,7 +527,7 @@ export const SITUATIONS: Situation[] = [
       },
       {
         label: "De plattegrond bekijken en de letter van het gebouw volgen.",
-        feedback: "Goed! Op het Martinuscollege zegt de code alles: C1.03 is vleugel C, eerste verdieping, lokaal 03.",
+        feedback: "Goed! Op de RSG Enkhuizen zegt de code alles: C1.03 is vleugel C, eerste verdieping, lokaal 03.",
         goed: true,
         effect: { zelfstandigheid: 7, tijdmanagement: 5 },
       },
