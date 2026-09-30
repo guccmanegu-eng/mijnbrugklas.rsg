@@ -80,7 +80,7 @@ function Home() {
             <Pill tone="warn">🕹️ Spelenderwijs oefenen</Pill>
           </div>
           <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
-            Overleef jij een week op de{" "}
+            Overleef jij een week op het{" "}
             <span className="text-brand">RSG Enkhuizen</span>? 🎒
           </h1>
           <p className="mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
